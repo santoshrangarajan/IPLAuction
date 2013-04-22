@@ -1,0 +1,27 @@
+Two business giants B1 and B2 take the ownership of Pune and Kochi teams respectivly. At the time of auction both teams have a pool of 30 players to choose from.
+Each player is rated on the scale of 0 to 10 (10 being the best) in each of the below departments:
+1. Batting 
+2. Bowling 
+3. Fielding
+4. Can keep wickets? (keeping strength would be either 0 or 10)
+
+Total Strength of a player = Batting Strength + Bowling Strength + Fielding Strength + Keeping Strength
+Besides these, each player has a jersey number which is a unique natural number. Prime numbered jersies are worn by foreign players only. 
+
+Price of a particular player is determined by below formula:
+Price (in INR) = 1000000 X (0.45 <strength_batting> +  0.35 <strength_bowling> + 0.20 <strength_fielding>) + 500000 X (<can_keep_wickets>)
+
+Entire data about the players is available to an automated auctionor in xml format. The auctionor puts up players for auction in increasing order of their price.
+
+Both B1 and B2 are looking for 5 players. Each team can have a maximum of two foreign players. 
+
+B1 and B2 alternately buy players put up on sale by auctionor. If the player cannot enter the squad (due to team strength/foreign players constraints), he is returned back to the auctionor. 
+Else, if a team has unfulfilled strength, then the most expensive eligible player is returned back to the auctioner and the new player is inducted.
+A player, when rejected by both groups, is declared UNSOLD and is removed from the auctionor's queue.
+
+With given conditions and for given player strength xml (sample.xml), compute the team composition, minimum amount B1 and B2 have to spend individually 
+on their respective teams to achieve the desired strength for each of the below cases:
+
+Case 1: Desired Strength = 60, A calls first
+Case 2: Desired Strength = 65, B calls first
+Case 3: Desired Strength = 70, A calls first
