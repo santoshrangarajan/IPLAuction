@@ -4,7 +4,7 @@ Java App to demonstrate IPL Auction
 
 Requirements
 ============
-Refer to requirements.txt , which part of code base
+Refer to <a href="https://github.com/santoshrangarajan/IPLAuction/blob/master/requirements.txt"> requirements.txt </a>
 
 Installation
 ============
@@ -12,7 +12,7 @@ Import the sources as eclipse project and build it
 
 Running
 =======
-Refer to readme.txt, which is part of code base
+Refer to <a href="https://github.com/santoshrangarajan/IPLAuction/blob/master/readme.txt">readme.txt </a>
 
 License
 =======
